@@ -1,0 +1,203 @@
+<!--
+    Michael Ciampa
+    mc16az 
+    6076384
+    COSC 2P89
+    Assignment 5
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <title>Michael Ciampa - A5</title>
+
+        <link rel="stylesheet" href="mystyle.css">
+
+    </head>
+    <body onload='defaultLoad()'>
+        <script src="main.js"></script>
+        
+            <header>
+                <div id="top-bar">
+                    <p id="welcome-guest">Welcome! <a href="#login" class="hover" onclick="showLogin()">Login</a> <a href="#signup" class="hover" onclick="showSignUp()">Sign Up</a></p>
+                    <p id="stay-updated">Get in Touch: <a href="mailto:michaelciampa10@gmail.com">Business Email</a></p>
+                </div>
+
+                <div id="title">
+                    <h1>Michael Ciampa</h1>
+                    <p>Junior Developer</p>
+                </div>
+                
+                <div class="menu" id="navbar">
+  					<a href="#home" class="hover" onclick="showHome()">Home</a>
+  					<a href="#about" class="hover" onclick="showAbout()">About</a>
+                    <a href="#courses" class="hover" onclick="showCourses()">Courses</a>
+  					<a href="#cv" class="hover" onclick="showCV()">CV</a>
+                    <a href="#projects" class="hover" onclick="showProjects()">Past Projects</a>
+  					<a href="javascript:void(0);" class="icon" onclick="navBar()">
+    					<i class="fa fa-bars"></i>
+  					</a>
+				</div>
+            </header>
+
+            <section id="content">
+            
+                <div class="col-12">
+                    <div id="myAbout"> 
+                        <div class="about-section">
+                            <h1>About Me</h1>
+                            <p>This page is all about who I am and what I do in my free time.</p>
+                        </div>
+                        <h2 style="text-align:center"></h2>
+                        <div class="row">
+                            <div class="column">
+                                <div class="card">
+                                <img src="D&D.jpg" alt="D&D" style="width:100%">
+                                <div class="container">
+                                    <h2>Dungeons & Dragons</h2>
+                                    <p class="title">Dungeon Master</p><br>
+                                    <p>Have run hundreds of hours of modules for my friends and family alike. DM of 5 years and counting.</p>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div class="card">
+                                <img src="muaythai.jpg" alt="MuayThai" style="width:100%">
+                                <div class="container">
+                                    <h2>Muay Thai</h2>
+                                    <p class="title">Student</p><br>
+                                    <p>For exercise, I have trained in Muay Thai for 3 years, but still have a long way to go.</p>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div class="card">
+                                <img src="cooking.jpg" alt="Cooking" style="width:100%">
+                                <div class="container">
+                                    <h2>Cooking</h2>
+                                    <p class="title">Home Cook</p><br>
+                                    <p>Have spent many years preparing delicious meals of all cuisine types, but especially Italian and Japanese.</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+
+                <div class="col-12">
+                    <div id="myHome">
+                        <div class="home-section">
+                            <h1>Home</h1>
+                            <p>This page is about who I am and what I do.</p>
+                        </div>
+                        <h2 style="text-align:center"></h2>
+                        <div class="row">
+                            <div class="column">
+                                <div class="card">
+                                <img src="brock.jpg" alt="BrockU" style="width:100%">
+                                <div class="container">
+                                    <h2>Brock University</h2>
+                                    <p class="title">Graduate 2021</p><br>
+                                    <p>Honours Bachelors of Information Sytems</p>
+                                    <p>Minor in Computer Science</p>
+                                </div>
+                                </div>
+                            </div>
+            
+                            <div class="column">
+                                <div class="card">
+                                <img src="webdev.jpg".jpg" alt="WebDev" style="width:100%">
+                                <div class="container">
+                                    <h2>Full Stack Web Development</h2>
+                                    <p class="title">Junior</p><br>
+                                    <p>Experience in Front End, Back End, and Data Transfer areas of WebDev.</p>
+                                </div>
+                                </div>
+                            </div>
+            
+                            <div class="column">
+                                <div class="card">
+                                <img src="IS.jpg" alt="Information Systems" style="width:100%">
+                                <div class="container">
+                                    <h2>Information Systems</h2>
+                                    <p class="title">Junior</p><br>
+                                    <p>Majored in and job experience designing, creating, and implementing databases and other IS modelling techniques.</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div id="myCourses">
+                    <div class="course-section">
+                        <h1>Courses</h1>
+                        <p>A list of the current courses I am taking.</p>
+                    </div>
+                    <div class="list-style">
+                        <h2>Relavent Courses Completed</h2><br>
+                        <ul class="check-list">
+                            <li>Applied Programming - Python, OOP</li>
+                            <li>Internet Technologies - JS, HTML/CSS, PHP, RESTapi</li>
+                            <li>Data Structures - Java, Dictionaries, Linked Lists, Binary Trees</li>
+                            <li>Systems Analysis & Design - Modelling, prototyping, implementation, & operation of Db using mySQL.</li>
+                            <li>Information Security - Information security techniques & IS architecture.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="myCV">
+                    <div class="course-section">
+                        <h1>CV</h1>
+                        <p>Here is the full breakdown of my academic and professional history.</p>
+                    </div>
+                    <div class="cv-style">
+                        <object data="CV.pdf" type="application/pdf" width="100%" height="2200px">
+                            alt : <a href="CV.pdf">My CV</a>
+                        </object>
+                    </div>
+                </div>
+
+                <div id="myProjects">
+                    <p>test projects</p>
+                </div>
+
+            </section>
+
+            <div id="myLogin">
+
+            </div>
+
+            <div id="mySignUp">
+
+            </div>
+
+            <footer>
+                <div id="footer">
+                    <div id="links">
+                        <h4>Links</h4>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/michael-ciampa-b079a51a6/">LinkedIn</a></li>
+                            <li><a href="https://www.facebook.com/michael.ciampa.98">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/heyitsciampa/?hl=en">Instagram</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="follow">
+                        <h4>Hire me</h4>
+                        <ul>
+                            <li><a href="mailto:michaelciampa10@gmail.com">Email</a></li>
+                        </ul>
+                    </div>
+
+                    <p id="copyright">Copyright &copy 2021.<br>All Rights Reserved.</p>
+                </div>
+            </footer>
+    </body>
+</html>
